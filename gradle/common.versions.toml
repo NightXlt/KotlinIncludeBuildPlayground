@@ -1,0 +1,2 @@
+[libraries]
+shared-logic = { module = "com.lingtong.me:shared-logic" }

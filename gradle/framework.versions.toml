@@ -1,0 +1,4 @@
+
+
+[libraries]
+network = { module = "com.lingtong.me:network" }
