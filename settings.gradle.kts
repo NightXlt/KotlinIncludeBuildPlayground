@@ -17,8 +17,13 @@ dependencyResolutionManagement {
 
 rootProject.name = "KotlinIncludeBuildPlayground"
 
+val initScriptFile = File("${rootDir}/gradle/init.gradle.kts")
+apply(from = initScriptFile.absolutePath)
+
 includeBuild("framework")
 includeBuild("common")
 
 include(":app")
 
+
+settings.gradle.startParameter.initScripts = settings.gradle.startParameter.initScripts + initScriptFile
