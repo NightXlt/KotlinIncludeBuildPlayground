@@ -7,12 +7,12 @@ android {
     namespace = "com.example.kotlin.includebuild.network"
     compileSdk = 34
 
-    defaultConfig ({
+    defaultConfig {
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    })
+    }
 
     buildTypes {
         release {
@@ -33,6 +33,7 @@ android {
 }
 
 group = "com.lingtong.me"
+
 dependencies {
     implementation(libs.okhttp3)
     implementation(libs.androidx.core.ktx)

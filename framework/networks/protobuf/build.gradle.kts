@@ -1,18 +1,17 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
 }
 
 android {
-    namespace = "com.example.kotlin.includebuild.sharedlogic"
+    namespace = "com.example.kotlin.includebuild.protobuf"
     compileSdk = 34
 
     defaultConfig {
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
 
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -32,11 +31,12 @@ android {
         jvmTarget = "1.8"
     }
 }
+
 group = "com.lingtong.me"
+
 dependencies {
+    implementation(libs.okhttp3)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.google.android.material)
-    implementation(framework.network)
 }
-

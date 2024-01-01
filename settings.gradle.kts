@@ -22,6 +22,7 @@ apply(from = initScriptFile.absolutePath)
 
 includeBuild("framework")
 includeBuild("common")
+includeBuild("framework/networks")
 
 include(":app")
 

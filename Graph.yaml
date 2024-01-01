@@ -2,3 +2,8 @@
   depends:
     - framework
 - path: framework
+  sub_path:
+    - network
+  depends:
+    - thirdparty
+- path: thirdparty
