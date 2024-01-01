@@ -7,13 +7,6 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
 
 rootProject.name = "KotlinIncludeBuildPlayground"
 
@@ -22,6 +15,7 @@ apply(from = initScriptFile.absolutePath)
 
 includeBuild("framework")
 includeBuild("common")
+includeBuild("framework/networks")
 
 include(":app")
 

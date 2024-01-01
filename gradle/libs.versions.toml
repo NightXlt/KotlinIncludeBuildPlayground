@@ -6,12 +6,14 @@ androidx-corektx = "1.12.0-rc01"
 kotlin = "1.9.21"
 material = "1.9.0"
 okhttp = "4.12.0"
+coil = "2.5.0"
 targetSdk = "34"
 minSdk = "24"
 compileSdk = "34"
 
 [libraries]
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidx-appcompat" }
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-corektx" }
 google-android-material = { module = "com.google.android.material:material", version.ref = "material" }
