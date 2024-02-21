@@ -21,3 +21,10 @@ include(":app")
 
 
 settings.gradle.startParameter.initScripts = settings.gradle.startParameter.initScripts + initScriptFile
+
+gradle.extra.set("isSyncStage", isSyncStage())
+
+fun isSyncStage(): Boolean {
+    val fromIde = gradle.startParameter.projectProperties["android.injected.invoked.from.ide"]?.toBoolean()
+    return fromIde == true && gradle.startParameter.taskNames.isEmpty()
+}
