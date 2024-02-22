@@ -37,6 +37,7 @@ android {
 
 dependencies {
     implementation(framework.network)
+    implementation(framework.imageloader)
     implementation(common.shared.logic)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

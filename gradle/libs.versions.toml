@@ -18,8 +18,6 @@ coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-corektx" }
 google-android-material = { module = "com.google.android.material:material", version.ref = "material" }
 okhttp3 = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
-network = { module = "com.lingtong.me:network" }
-shared-logic = { module = "com.lingtong.me:shared-logic" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }

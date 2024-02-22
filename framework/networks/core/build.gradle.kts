@@ -35,6 +35,7 @@ android {
 group = "com.lingtong.me"
 
 dependencies {
+    implementation(framework.protobuf)
     implementation(libs.okhttp3)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

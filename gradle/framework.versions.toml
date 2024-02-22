@@ -2,4 +2,5 @@
 
 [libraries]
 network = { module = "com.lingtong.me:core" }
+protobuf = { module = "com.lingtong.me:protobuf" }
 imageloader = { module = "com.lingtong.me:imageloader" }
